@@ -1,0 +1,56 @@
+<?php
+
+/////////////////1///////////////////
+
+$x =0;
+$numero =10;
+for ($i=0;$i < $numero+1;$i++){
+    $i+=$i;
+}
+
+echo "$x";
+
+/////////////////2////////////////////
+echo'<br/><br/>';
+
+$prox = 0;
+$ant = $prox;
+$atual = 1;
+echo"0 1";
+$limite = 10;
+for($x = 0; $x <$limite - 1; $x++) {
+    $prox = $atual + $ant;
+    echo " " , $prox;
+    $ant = $atual;
+    $atual = $prox;
+}
+
+/////////////////3////////////////////
+echo'<br/><br/>';
+
+$A = 1.50;
+$F = 1.10;
+
+while($F > $A) {
+    $A+0.2;
+    $F+0.3;
+    
+    if($F > $A) {
+        echo'Felisberto será maior que Analince daqui:' . $F . $A. '<br/>';
+        return;
+    }
+}
+
+/////////////////4////////////////////
+
+$expoente =2;
+$exponencial =4;
+echo $expoente**$exponencial;
+
+////////////////5/////////////////////
+echo '<br/><br/>';
+
+for($i=50 * 0.5555555555555556;$i <= 150;$i++){
+    
+    echo"$i" . "<br/>";
+}
